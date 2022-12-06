@@ -349,34 +349,34 @@ body {
   background-color: var(--team-bg-color);
 }
 
-.team-title {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.team-item {
+.team__item {
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-container {
+.team__foto {
+  display: block;
+}
+
+.team__container {
   padding-top: 30px;
   padding-bottom: 30px;
 
   background-color: var(--primary-white-color);
 }
 
-.team-foto {
-  display: block;
-}
-
-.team-member {
+.team__member {
   margin-top: 0px;
   margin-bottom: 10px;
 
@@ -387,7 +387,7 @@ body {
   text-align: center;
 }
 
-.team-position {
+.team__position {
   margin-top: 0;
   margin-bottom: 16;
 
@@ -397,25 +397,25 @@ body {
   text-align: center;
 }
 
-.team-social {
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-items {
+.social__items {
   width: 44px;
   height: 44px;
 }
 
-.social-items:not(:last-child) {
+.social__items:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-link {
+.social__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -426,32 +426,32 @@ body {
     background-color var(--time-duration) var(--time-function);
 }
 
-.social-link:hover {
+.social__link:hover {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 /*--------------------КЛІЄНТИ--------------------  */
-.clients-title {
+.clients__title {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   align-items: center;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-link {
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -465,7 +465,7 @@ body {
   transition: fill var(--time-duration) var(--time-function);
 }
 
-.clients-link:hover {
+.clients__link:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -478,7 +478,7 @@ body {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -491,39 +491,39 @@ body {
 }
 
 /*--------------------КОНТАКТИ--------------------  */
-.contacts {
+.footer__list {
   font-style: normal;
 }
 
-.contacts-element:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts-address {
+.footer__address {
   color: var(--primary-white-color);
   line-height: 1.71;
 
   transition: color var(--time-duration) var(--time-function);
 }
 
-.contacts-item {
+.footer__link {
   color: var(--contacts-main-color);
   line-height: 1.71;
   transition: color var(--time-duration) var(--time-function);
 }
 
-.contacts-address:hover,
-.contacts-item:hover,
-.contacts-address:focus,
-.contacts-item:focus {
+.footer__address:hover,
+.footer__link:hover,
+.footer__address:focus,
+.footer__link:focus {
   color: var(--accent-color);
 }
 
-.socials {
+.footer__social {
   margin-left: 70px;
 }
 
-.socials-appeal {
+.footer__appeal {
   margin: 0 0 20px 0;
 
   font-weight: 700;
@@ -531,21 +531,6 @@ body {
   line-height: 1.14;
 
   color: var(--primary-white-color);
-}
-
-.socials-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.socials-item {
-  width: 44px;
-  height: 44px;
-}
-
-.socials-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .socials-link {
@@ -570,7 +555,7 @@ body {
   margin-left: auto;
 }
 
-.subscribe input {
+.subscribe__field {
   width: 358px;
   margin-right: 12px;
   padding: 15px 16px;
@@ -581,7 +566,7 @@ body {
   outline: none;
 }
 
-.subscribe-btn {
+.subscribe__btn {
   display: inline-flex;
   align-items: center;
   padding: 10px 28px;
@@ -604,12 +589,12 @@ body {
   transition: background-color var(--time-duration) var(--time-function);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe__btn:hover,
+.subscribe__btn:focus {
   background-color: #188ce8;
 }
 
-.send-icon {
+.subscribe__icon {
   margin-left: 10px;
 }
 
