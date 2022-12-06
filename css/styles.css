@@ -88,7 +88,7 @@ body {
 }
 
 /* --------------------ВЕРХНЯ ЛІНІЯ-------------------- */
-.page-header {
+.header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--header-border-color);
@@ -109,31 +109,31 @@ body {
   line-height: 1.19;
 }
 
-.logo-accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
 /*--------------------НАВІГАЦІЯ САЙТУ--------------------  */
-.main-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.site-nav {
+.header__list {
   display: flex;
   margin-left: 95px;
 }
 
-.site-nav .item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.header__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -145,17 +145,17 @@ body {
   transition: color var(--time-duration) var(--time-function);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.header__link.current {
   position: relative;
   color: var(--accent-color);
 }
 
-.site-nav .link.current::after {
+.header__link.current::after {
   content: '';
   position: absolute;
   display: block;
@@ -166,19 +166,17 @@ body {
   border-radius: 2px;
 }
 
-.feedback-nav {
+.header__feedback {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.feedback-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
 /*--------------------ЗВОРОТНІЙ ЗВ'ЯЗОК--------------------  */
-.e-mail,
-.phone {
+.header__e-mail,
+.header__phone {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -187,18 +185,14 @@ body {
   transition: color var(--time-duration) var(--time-function),
     fill var(--time-duration) var(--time-function);
 }
-.e-mail:hover,
-.phone:hover,
-.e-mail:focus,
-.phone:focus {
+.header__e-mail:hover,
+.header__phone:hover,
+.header__e-mail:focus,
+.header__phone:focus {
   color: var(--accent-color);
 }
 
-.icon-mail {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.icon-phone {
+.header__icon {
   margin-right: 10px;
   fill: currentColor;
 }
