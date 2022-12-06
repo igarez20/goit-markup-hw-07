@@ -305,26 +305,26 @@ body {
   padding-top: 0;
 }
 
-.work-title {
+.work__title {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
 }
 
-.work-card {
+.work__thumb {
+  position: relative;
+}
+
+.work__card {
   display: block;
   min-width: 100%;
 }
 
-.work-thumb {
-  position: relative;
-}
-
-.work-text {
+.work__text {
   position: absolute;
   bottom: 0;
   margin: 0;
