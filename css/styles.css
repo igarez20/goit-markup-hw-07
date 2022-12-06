@@ -218,7 +218,7 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
@@ -233,7 +233,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
   padding: 10px 32px;
 
   background-color: var(--accent-color);
@@ -245,14 +245,14 @@ body {
     background-color var(--time-duration) var(--time-function);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: var(--primary-text-color);
   background-color: var(--btn-bg-color);
 }
 
 /*--------------------НАШІ ПЕРЕВАГИ--------------------  */
-.benefits-title {
+.benefits__title {
   margin-top: 0;
 }
 
@@ -267,12 +267,12 @@ body {
   overflow: hidden;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
   gap: 30px;
 }
 
-.benefits-link {
+.benefits__link {
   display: flex;
   height: 120px;
   justify-content: center;
@@ -282,7 +282,7 @@ body {
   cursor: auto;
 }
 
-.benefits-item {
+.benefits__heading {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -292,7 +292,7 @@ body {
   text-transform: uppercase;
 }
 
-.benefits-text {
+.benefits__text {
   margin-top: 0;
   margin-bottom: 0;
 
