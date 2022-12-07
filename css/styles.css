@@ -101,7 +101,7 @@ body {
 }
 
 .logo {
-  color: var(--logo-color);
+  color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -109,8 +109,8 @@ body {
   line-height: 1.19;
 }
 
-.logo__accent {
-  color: var(--accent-color);
+.logo--black {
+  color: var(--logo-color);
 }
 
 /*--------------------НАВІГАЦІЯ САЙТУ--------------------  */
@@ -483,10 +483,7 @@ body {
   align-items: baseline;
 }
 
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-
+.logo--white {
   color: var(--primary-white-color);
 }
 
