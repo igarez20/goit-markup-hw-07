@@ -818,7 +818,14 @@ body {
 }
 
 /*--------------------ПОРТФОЛІО--------------------  */
-.examples-item:not(:first-child) {
+
+.examples__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.examples__item:not(:first-child) {
   margin-left: 8px;
 }
 
@@ -827,7 +834,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.examples-btn {
+.examples__btn {
   padding: 6px 22px;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -836,52 +843,46 @@ body {
     background-color var(--time-duration) var(--time-function);
 }
 
-.examples-btn:hover,
-.examples-btn:focus {
+.examples__btn:hover,
+.examples__btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.examples-nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.examples-list {
+.examples__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-right: -30px;
 }
 
-.examples-element {
+.examples__element {
   width: 370px;
   margin-top: 30px;
   margin-right: 30px;
 }
 
-.examples-element:nth-child(3n) {
+.examples__element:nth-child(3n) {
   margin-right: 0;
 }
 
-.examples-link {
+.examples__link {
   display: block;
   transition: box-shadow var(--time-duration) var(--time-function);
 }
 
-.examples-link:hover,
-.examples-link:focus {
+.examples__link:hover,
+.examples__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.examples-thumb {
+.examples__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.examples-overlay {
+.examples__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -900,16 +901,16 @@ body {
   transition: transform var(--time-duration) var(--time-function);
 }
 
-.examples-link:hover .examples-overlay,
-.examples-link:focus .examples-overlay {
+.examples__link:hover .examples__overlay,
+.examples__link:focus .examples__overlay {
   transform: translateY(0);
 }
 
-.examples-photo {
+.examples__photo {
   display: block;
 }
 
-.examples-container {
+.examples__info {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -920,7 +921,7 @@ body {
   border-bottom: 1px solid var(--portfolio-border-color);
 }
 
-.examples-title {
+.examples__title {
   margin-top: 0;
   margin-bottom: 4px;
 
@@ -931,7 +932,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.examples-text {
+.examples__text {
   margin-top: 0;
   margin-bottom: 0;
 
