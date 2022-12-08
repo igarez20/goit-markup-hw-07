@@ -530,13 +530,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.socials-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+.social__link--inverse {
   fill: var(--primary-white-color);
   background-color: #ffffff1a;
 
