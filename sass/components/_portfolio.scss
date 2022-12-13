@@ -21,12 +21,12 @@
   letter-spacing: 0.03em;
 
   transition: color $time-duration $time-function, background-color $time-duration $time-function;
-}
 
-.examples__btn:hover,
-.examples__btn:focus {
-  color: $primary-white-color;
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
 }
 
 .examples__list {
@@ -40,21 +40,21 @@
   width: 370px;
   margin-top: 30px;
   margin-right: 30px;
-}
 
-.examples__element:nth-child(3n) {
-  margin-right: 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .examples__link {
   display: block;
   transition: box-shadow $time-duration $time-function;
-}
 
-.examples__link:hover,
-.examples__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .examples__thumb {
@@ -79,15 +79,11 @@
 
   transform: translateY(100%);
   transition: transform $time-duration $time-function;
-}
 
-.examples__link:hover .examples__overlay,
-.examples__link:focus .examples__overlay {
-  transform: translateY(0);
-}
-
-.examples__photo {
-  display: block;
+  .examples__link:hover &,
+  .examples__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .examples__info {
@@ -108,14 +104,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: $prmary-text-color;
+  color: $primary-text-color;
   letter-spacing: 0.06em;
 }
 
 .examples__text {
-  margin-top: 0;
-  margin-bottom: 0;
-
   color: $secondary-text-color;
 
   font-size: 16px;
